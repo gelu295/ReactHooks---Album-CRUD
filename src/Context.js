@@ -21,7 +21,6 @@ function ContextProvider({ children }) {
   };
 
   const editAlbum = (title, id) => {
-    console.log(title, id);
     fetch(url + id, {
       method: "PATCH",
       body: JSON.stringify({
